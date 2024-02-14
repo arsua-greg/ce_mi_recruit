@@ -1,0 +1,40 @@
+.sect_title {
+  color: #21aaa6;
+  text-align: center;
+  @include font-line(30px);
+  font-weight: 700;
+
+  @include is-sp {
+    font-size: 25px;
+  }
+}
+
+.pc {
+  @include is-max($breakpoint-pc) {
+    display: none;
+  }
+}
+
+.sp {
+  display: none;
+  @include is-max($breakpoint-pc) {
+    display: block;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row-reverse {
+  @include is-max($breakpoint-pc) {
+    flex-direction: column-reverse;
+  }
+}
+
+.mt-20 {
+  @include is-min($breakpoint-pc) {
+    margin-top: 20px;
+  }
+}

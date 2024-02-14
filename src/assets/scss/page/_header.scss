@@ -1,0 +1,151 @@
+.header {
+  padding: 30px 0 0;
+
+  @include is-sp {
+    padding: 20px 0 0;
+  }
+}
+
+.header_main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .col-1 {
+    .logo {
+      width: 249px;
+      @include is-sp {
+        width: 165px;
+      }
+    }
+  }
+
+  .col-2 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    @include is-sp {
+      gap: 20px;
+    }
+
+    .links {
+      align-items: center;
+      color: #583c27;
+      display: flex;
+      gap: 30px;
+
+      .link-list {
+        display: flex;
+        gap: 30px;
+
+        @include is-max(1100px) {
+          display: none;
+        }
+
+        &__item {
+          font-weight: 700;
+          &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .header_btn {
+        background-color: #ffdf63;
+        border-radius: 20px;
+        color: #583c27;
+        padding: 9px 0;
+        width: 100px;
+        @include font-line(18px);
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 700;
+        &:hover {
+          opacity: 0.7;
+          cursor: pointer;
+        }
+
+        @include is-sp {
+          width: 80px;
+          padding: 7px 0;
+        }
+        p {
+          margin-top: 3px;
+          @include is-sp {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+
+    .hamburger_menu {
+      z-index: 10;
+      @include is-min(1100px) {
+        display: none;
+      }
+
+      &.isActive {
+        position: fixed;
+        right: 20px;
+        span {
+          &:first-child {
+            transform: rotate(40deg);
+            margin-bottom: 0;
+          }
+          &:nth-child(2) {
+            width: 0;
+            display: none;
+          }
+          &:last-child {
+            transform: rotate(-40deg);
+            top: -3px;
+            position: relative;
+          }
+        }
+      }
+
+      span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: #583c27;
+        margin-bottom: 6px;
+        border-radius: 3px;
+        transition: 0.3s ease-in-out;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.nav_sp {
+  position: fixed;
+  z-index: 9;
+  background-color: #ffdd52;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease;
+  display: none;
+
+  &.isOpen {
+    display: block;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 97px;
+
+    &--item {
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+  }
+}

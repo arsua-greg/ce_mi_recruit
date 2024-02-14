@@ -1,0 +1,27 @@
+        <div class="page__footer">
+            <footer class="footer">
+                <div class="container">
+                    <img class="pc" src="<?php echo get_template_directory_uri() ?>/release/image/footer_banner.png" alt="">
+                    <img class="sp" src="<?php echo get_template_directory_uri() ?>/release/image/footer_banner_sp.png" alt="">
+                    <div class="wrapper">
+                        <ul class="links">
+                            <li class="links__item">
+                                <a href="">©社会福祉法人みつばち会</a>
+                            </li>
+                            <li class="links__item">
+                                <a href="https://forms.gle/9nTZBEeXANhT8Zoj9">お問い合わせ</a>
+                            </li>
+                            <li class="links__item">
+                                <a href="https://mitsu-bachi.net/privacy.html">プライバシーポリシー</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <?php wp_footer(); ?>
+        </body>
+
+        </html>

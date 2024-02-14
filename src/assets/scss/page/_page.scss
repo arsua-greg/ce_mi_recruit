@@ -1,0 +1,35 @@
+.l-wrap {
+  @include is-max(1366px) {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  @include is-min(1367px) {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  @include is-sp {
+    padding: 0 10px;
+  }
+}
+
+.wrapper {
+  max-width: 1280px;
+  padding: 0 40px;
+  margin: 0 auto;
+  @include is-min(1367px) {
+    max-width: 1780px;
+    padding: 0 40px;
+  }
+
+  @include is-sp {
+    padding: 0 20px;
+  }
+}
+
+.page__content {
+  overflow: hidden;
+}
