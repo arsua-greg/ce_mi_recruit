@@ -39,19 +39,21 @@
                         $the_query = new WP_Query($args); ?>
                         <?php if ($the_query->have_posts()) : ?>
                             <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                                <li class="news_list--item">
-                                    <p class="date"><?php echo get_the_date('Y.m.d'); ?></p>
-                                    <?php
-                                    $category = get_the_category();
-                                    foreach ($category as $cat) : ?>
-                                        <span class="category"><?php echo $cat->name; ?></span>
-                                    <?php endforeach ?>
-                                    <p class="title"><?php echo get_the_title(); ?></p>
-                                </li>
+                                <a href="<?php echo the_permalink(); ?>">
+                                    <li class="news_list--item">
+                                        <p class="date"><?php echo get_the_date('Y.m.d'); ?></p>
+                                        <?php
+                                        $category = get_the_category();
+                                        foreach ($category as $cat) : ?>
+                                            <span class="category"><?php echo $cat->name; ?></span>
+                                        <?php endforeach ?>
+                                        <p class="title"><?php echo get_the_title(); ?></p>
+                                    </li>
+                                </a>
                             <?php endwhile; ?>
                         <?php endif; ?>
                     </ul>
-                    <a href="/news" class="read_more">
+                    <a href="<?php echo get_permalink(get_page_by_path('news')) ?>" class="read_more">
                         <p>一覧</p>
                         <img src="<?php echo get_template_directory_uri() ?>/release/image/arrow_right.svg" alt="">
                     </a>
