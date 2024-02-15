@@ -51,7 +51,7 @@
                             <?php endwhile; ?>
                         <?php endif; ?>
                     </ul>
-                    <a href="/" class="read_more">
+                    <a href="/news" class="read_more">
                         <p>一覧</p>
                         <img src="<?php echo get_template_directory_uri() ?>/release/image/arrow_right.svg" alt="">
                     </a>
