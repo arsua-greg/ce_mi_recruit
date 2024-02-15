@@ -8,12 +8,12 @@
   align-items: center;
   justify-content: center;
 
-  @include is-max(1200px) {
-    min-height: 65vw;
-  }
-
   @include is-sp {
     background-size: cover;
+  }
+
+  @include is-max(1200px) {
+    min-height: 65vw;
   }
 
   @include is-min(1367px) {
@@ -561,13 +561,13 @@
 
     .col-1 {
       @include is-min($breakpoint-pc) {
-        width: 46%;
+        width: 47%;
       }
     }
 
     .col-2 {
       @include is-min($breakpoint-pc) {
-        width: 49%;
+        width: 50%;
       }
 
       &__ttl {

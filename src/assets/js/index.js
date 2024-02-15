@@ -47,3 +47,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+
+$(document).ready(function() {
+  $(".drop_btn").on("click", function(event) {
+    event.preventDefault();
+    var $dropDown = $(this).next(".drop_down");
+    $dropDown.slideToggle();
+
+    var $image = $(this).find("img");
+    $image.toggleClass("rotate"); // Just toggle the class without checking
+  });
+});
+
