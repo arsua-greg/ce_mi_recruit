@@ -509,7 +509,7 @@
     color: #fff;
     border-radius: 30px;
     width: 100%;
-    padding: 16px 0;
+    padding: 11px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -521,6 +521,8 @@
     }
 
     p {
+      @include font-line(18px);
+      font-weight: 700;
       color: #fff;
       margin-right: 10px;
     }
@@ -593,7 +595,7 @@
       }
 
       .col-2 {
-        @include font-line(18px);
+        @include font-line(16px);
         line-height: 1.8;
       }
     }
@@ -620,7 +622,7 @@
     color: #fff;
     border-radius: 30px;
     width: 100%;
-    padding: 16px 0;
+    padding: 11px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -633,8 +635,10 @@
     }
 
     p {
+      @include font-line(18px);
       color: #fff;
       margin-right: 10px;
+      font-weight: 700;
     }
   }
 }
