@@ -40,7 +40,7 @@
                             <div class="links">
                                 <ul class="link-list">
                                     <li class="link-list__item">
-                                        <a href="#friends">働く仲間達</a>
+                                        <a href="<?php echo get_permalink(get_page_by_path('fellow')) ?>">働く仲間達</a>
                                     </li>
                                     <li class="link-list__item">
                                         <a href="#about">みつばち会について</a>
@@ -72,7 +72,7 @@
                         <div class="nav_sp">
                             <ul class="nav_sp__links">
                                 <li class="nav_sp__links--item">
-                                    <a href="">働く仲間達</a>
+                                    <a href="<?php echo get_permalink(get_page_by_path('fellow')) ?>">働く仲間達</a>
                                 </li>
                                 <li class="nav_sp__links--item">
                                     <a href="">みつばち会について</a>
