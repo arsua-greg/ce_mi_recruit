@@ -31,7 +31,7 @@
                     <nav class="header_main">
                         <div class="col-1">
                             <div class="logo">
-                                <a href="https://recruit.mitsu-bachi.net/">
+                                <a href="<?php echo home_url(); ?>">
                                     <img src="<?php echo get_template_directory_uri() ?>/release/image/logo.png" alt="logo">
                                 </a>
                             </div>
@@ -54,7 +54,7 @@
                                         <a href="<?php echo get_permalink(get_page_by_path('faq')) ?>">よくある質問</a>
                                     </li>
                                     <li class="link-list__item">
-                                        <a href="<?php echo get_permalink(get_page_by_path('jobdescription')) ?>">募集要項</a>
+                                        <a href="<?php echo get_permalink(get_page_by_path('job-description')) ?>">募集要項</a>
                                     </li>
                                 </ul>
                                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScyMhOKDYj0B3TZLC1JJ7u4MXG3byqfdAxIyOANVlA2S_E3LA/viewform" target="_blank">
@@ -84,7 +84,7 @@
                                     <a href="<?php echo get_permalink(get_page_by_path('faq')) ?>">よくある質問</a>
                                 </li>
                                 <li class="nav_sp__links--item">
-                                    <a href="<?php echo get_permalink(get_page_by_path('jobdescription')) ?>">募集要項</a>
+                                    <a href="<?php echo get_permalink(get_page_by_path('job-description')) ?>">募集要項</a>
                                 </li>
                             </ul>
                         </div>
