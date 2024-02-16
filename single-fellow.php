@@ -15,13 +15,17 @@
                             <?php foreach ($details as $detail) : ?>
                                 <div class="field-wrapper">
                                     <div class="q-logo">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/release/image/page_faq/qq.svg" alt="">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/release/image/page_faq/qq.png" alt="">
                                     </div>
                                     <div class="text">
                                         <p class="question"><?php echo $detail['question']; ?></p>
+                                    </div>
+                                    <div class="answer--empy">
+                                        <div class="empty"></div>
                                         <p class="answer"><?php echo $detail['answer']; ?></p>
                                     </div>
                                 </div>
+
                             <?php endforeach; ?>
                         <?php endif; ?>
                     </div>

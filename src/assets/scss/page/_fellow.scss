@@ -33,6 +33,9 @@
           align-items: flex-start;
           flex-wrap: wrap;
           padding: 20px 0 20px 10px;
+          @include is-min($breakpoint-sp) {
+            padding-right: 48px;
+          }
 
           &:not(:last-child) {
             border-bottom: 1px dotted #707070;
@@ -41,6 +44,25 @@
           .q-logo {
             margin-right: 15px;
             width: 45px;
+          }
+
+          .answer--empy {
+            width: 100%;
+            display: flex;
+            .answer {
+              @include font-line(18px, 26px);
+              font-weight: 500;
+              width: calc(100% - 60px);
+              padding-top: 20px;
+            }
+
+            .empty {
+              margin-right: 15px;
+              width: 45px;
+              @include is-sp {
+                display: none;
+              }
+            }
           }
 
           .text {
@@ -53,11 +75,6 @@
               @include is-sp {
                 @include font-line(16px);
               }
-            }
-
-            .answer {
-              width: 100%;
-              padding-top: 20px;
             }
           }
         }
