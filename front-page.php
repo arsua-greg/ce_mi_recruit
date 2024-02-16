@@ -62,7 +62,9 @@
         </div>
     </section>
     <section class="sect_4" id="friends">
-        <h3 class="sect_title">働く仲間達</h3>
+        <h3 class="sect_title">
+            <a href="<?php echo home_url(); ?>">働く仲間達</a>
+        </h3>
         <div class="swiper-container mySwiper">
             <div class="swiper-wrapper">
                 <?php

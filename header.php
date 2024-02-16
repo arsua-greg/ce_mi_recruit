@@ -40,17 +40,17 @@
                             <div class="links">
                                 <ul class="link-list">
                                     <li class="link-list__item">
-                                        <a href="<?php echo get_permalink(get_page_by_path('fellow')) ?>">働く仲間達</a>
+                                        <a href="<?php echo home_url() ?>/#friends">働く仲間達</a>
                                     </li>
-                                    <li class="link-list__item">
-                                        <a href="#about">みつばち会について</a>
+                                    <li class=" link-list__item">
+                                        <a href="<?php echo home_url() ?>/#about">みつばち会について</a>
                                     </li>
-                                    <li class="link-list__item">
-                                        <a href="#nursery">
+                                    <li class=" link-list__item">
+                                        <a href="<?php echo home_url() ?>/#nursery">
                                             運営保育園
                                         </a>
                                     </li>
-                                    <li class="link-list__item">
+                                    <li class=" link-list__item">
                                         <a href="<?php echo get_permalink(get_page_by_path('faq')) ?>">よくある質問</a>
                                     </li>
                                     <li class="link-list__item">
@@ -72,16 +72,16 @@
                         <div class="nav_sp">
                             <ul class="nav_sp__links">
                                 <li class="nav_sp__links--item">
-                                    <a href="<?php echo get_permalink(get_page_by_path('fellow')) ?>">働く仲間達</a>
+                                    <a href="<?php echo home_url() ?>/#friends">働く仲間達</a>
+                                </li>
+                                <li class=" nav_sp__links--item">
+                                    <a href="<?php echo home_url(); ?>/#about">みつばち会について</a>
                                 </li>
                                 <li class="nav_sp__links--item">
-                                    <a href="">みつばち会について</a>
+                                    <a href="<?php echo home_url() ?>/#nursery"">運営保育園</a>
                                 </li>
-                                <li class="nav_sp__links--item">
-                                    <a href="">運営保育園</a>
-                                </li>
-                                <li class="nav_sp__links--item">
-                                    <a href="<?php echo get_permalink(get_page_by_path('faq')) ?>">よくある質問</a>
+                                <li class=" nav_sp__links--item">
+                                        <a href="<?php echo get_permalink(get_page_by_path('faq')) ?>">よくある質問</a>
                                 </li>
                                 <li class="nav_sp__links--item">
                                     <a href="<?php echo get_permalink(get_page_by_path('job-description')) ?>">募集要項</a>

@@ -263,7 +263,14 @@
           font-size: 16px;
           font-weight: 500;
           margin-top: 15px;
-          text-align: center;
+          @include is-min($breakpoint-sp) {
+            text-align: center;
+          }
+          br {
+            @include is-sp {
+              display: none;
+            }
+          }
           @include is-sp {
             margin-top: 10px;
           }
