@@ -33,9 +33,7 @@
                 </div>
             </div>
         </div>
-        <div class="page_fellow--images">
 
-        </div>
     </div>
 </div>
 <?php get_footer(); ?>

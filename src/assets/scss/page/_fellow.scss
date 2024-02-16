@@ -64,4 +64,41 @@
       }
     }
   }
+
+  &--images {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    @include is-min($breakpoint-sp) {
+      margin: 50px -20px 0;
+    }
+    @include is-sp {
+      margin: 50px -10px 0;
+    }
+    .link {
+      display: block;
+      @include is-min($breakpoint-sp) {
+        width: calc(100% / 4);
+        padding: 0 20px;
+      }
+      @include is-sp {
+        width: calc(100% / 2);
+        padding: 0 10px 20px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    }
+
+    .slider_txt {
+      font-size: 16px;
+      font-weight: 500;
+      margin-top: 15px;
+      text-align: center;
+    }
+  }
 }
