@@ -36,8 +36,6 @@
     }
     &--item {
       display: flex;
-      padding: 20px 0;
-      padding-bottom: 20px;
 
       .date {
         @include font-line(14px);
