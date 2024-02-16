@@ -9,7 +9,7 @@
                                 <a href="">©社会福祉法人みつばち会</a>
                             </li>
                             <li class="links__item">
-                                <a href="https://forms.gle/9nTZBEeXANhT8Zoj9">お問い合わせ</a>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfyS0vtavLtlmkZSyiQ4_UNJie7mn9zwq4VpidcW8BR-TTc_g/viewform" target="_blank">お問い合わせ</a>
                             </li>
                             <li class="links__item">
                                 <a href="https://mitsu-bachi.net/privacy.html">プライバシーポリシー</a>

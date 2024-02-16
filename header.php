@@ -40,7 +40,7 @@
                             <div class="links">
                                 <ul class="link-list">
                                     <li class="link-list__item">
-                                        <a href="#friends">働く仲間達</a>
+                                        <a href="<?php echo get_permalink(get_page_by_path('fellow')) ?>">働く仲間達</a>
                                     </li>
                                     <li class="link-list__item">
                                         <a href="#about">みつばち会について</a>
@@ -51,13 +51,13 @@
                                         </a>
                                     </li>
                                     <li class="link-list__item">
-                                        <a href="/faq">よくある質問</a>
+                                        <a href="<?php echo get_permalink(get_page_by_path('faq')) ?>">よくある質問</a>
                                     </li>
                                     <li class="link-list__item">
-                                        <a href="/application">募集要項</a>
+                                        <a href="<?php echo get_permalink(get_page_by_path('jobdescription')) ?>">募集要項</a>
                                     </li>
                                 </ul>
-                                <a href="https://forms.gle/3rDiY5z34AHBXyWEA">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLScyMhOKDYj0B3TZLC1JJ7u4MXG3byqfdAxIyOANVlA2S_E3LA/viewform" target="_blank">
                                     <button type="button" class="header_btn">
                                         <p>ENTRY</p>
                                     </button>
@@ -72,7 +72,7 @@
                         <div class="nav_sp">
                             <ul class="nav_sp__links">
                                 <li class="nav_sp__links--item">
-                                    <a href="">働く仲間達</a>
+                                    <a href="<?php echo get_permalink(get_page_by_path('fellow')) ?>">働く仲間達</a>
                                 </li>
                                 <li class="nav_sp__links--item">
                                     <a href="">みつばち会について</a>
@@ -81,10 +81,10 @@
                                     <a href="">運営保育園</a>
                                 </li>
                                 <li class="nav_sp__links--item">
-                                    <a href="/faq">よくある質問</a>
+                                    <a href="<?php echo get_permalink(get_page_by_path('faq')) ?>">よくある質問</a>
                                 </li>
                                 <li class="nav_sp__links--item">
-                                    <a href="/application">募集要項</a>
+                                    <a href="<?php echo get_permalink(get_page_by_path('jobdescription')) ?>">募集要項</a>
                                 </li>
                             </ul>
                         </div>

@@ -1,98 +1,135 @@
-.containers {
-  background-color: #fff;
-  border-radius: 20px;
-  padding: 30px 20px 40px 20px;
-  margin-top: 30px;
-  max-width: 800px;
-  margin: 30px auto 0;
-  z-index: 2;
-  position: relative;
+.page-single {
+  padding-top: 20px;
+  .butterfly {
+    &:nth-child(1) {
+      position: absolute;
+      left: -60px;
+      top: 465px;
+      width: 386px;
+      height: 106px;
 
-  .sec1 {
-    text-align: left;
-    padding-bottom: 50px;
-    border-bottom: 1px dotted #707070;
-    h3 {
-      font-size: 22px;
-      line-height: 30px;
+      @include is-min(1600px) {
+        left: 40px;
+      }
+      @include is-max(1200px) {
+        left: -15vw;
+      }
+      @include is-max($breakpoint-pc) {
+        display: none;
+      }
     }
 
-    .title {
-      @include font-line(18px, 26px);
-      font-weight: 500;
-      @include is-min($breakpoint-sp) {
-        width: 448px;
+    &:nth-child(2) {
+      position: absolute;
+      right: -5px;
+      top: 190px;
+      width: 321px;
+
+      @include is-min(1600px) {
+        right: 40px;
       }
-      @include is-sp {
-        margin-top: 10px;
+
+      @include is-max($breakpoint-pc) {
+        display: none;
       }
     }
   }
+  .containers {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px 20px 40px 20px;
+    margin-top: 30px;
+    max-width: 800px;
+    margin: 30px auto 0;
+    z-index: 2;
+    position: relative;
 
-  .sec2 {
-    .news_list {
-      &--item {
-        padding-top: 20px;
+    .sec1 {
+      text-align: left;
+      padding-bottom: 50px;
+      border-bottom: 1px dotted #707070;
+      h3 {
+        font-size: 22px;
+        line-height: 30px;
+      }
 
-        .date-category {
-          display: flex;
-          .date {
-            @include font-line(14px);
-            font-weight: 700;
-            margin-right: 25px;
-            @include is-sp {
-              margin-right: 10px;
+      .title {
+        @include font-line(18px, 26px);
+        font-weight: 500;
+        @include is-min($breakpoint-sp) {
+          width: 448px;
+        }
+        @include is-sp {
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .sec2 {
+      .news_list {
+        &--item {
+          padding-top: 20px;
+
+          .date-category {
+            display: flex;
+            .date {
+              @include font-line(14px);
+              font-weight: 700;
+              margin-right: 25px;
+              @include is-sp {
+                margin-right: 10px;
+              }
+            }
+            .category {
+              background-color: #ffdd52;
+              border-radius: 20px;
+              @include font-line(12px);
+              font-weight: 700;
+              margin-right: 20px;
+              padding: 5px 0;
+              text-align: center;
+              width: 100px;
+              height: fit-content;
             }
           }
-          .category {
-            background-color: #ffdd52;
-            border-radius: 20px;
-            @include font-line(12px);
-            font-weight: 700;
-            margin-right: 20px;
-            padding: 5px 0;
-            text-align: center;
-            width: 100px;
-            height: fit-content;
-          }
-        }
 
-        .description {
-          padding-top: 15px;
+          .description {
+            padding-top: 15px;
 
-          p {
-            font-size: 18px;
-            line-height: 26px;
-            font-weight: 500;
-          }
+            p {
+              font-size: 18px;
+              line-height: 26px;
+              font-weight: 500;
+            }
 
-          p .aligncenter {
-            padding-top: 32px;
-            display: block;
-            margin: 0 auto;
-            padding-bottom: 10px;
+            p .aligncenter {
+              padding-top: 32px;
+              display: block;
+              margin: 0 auto;
+              padding-bottom: 10px;
+            }
+
+            @include is-sp {
+              flex-wrap: wrap;
+              align-items: center;
+            }
           }
 
-          @include is-sp {
-            flex-wrap: wrap;
-            align-items: center;
-          }
-        }
+          .button-container {
+            display: flex;
+            justify-content: center;
+            padding-top: 65px;
 
-        .button-container {
-          display: flex;
-          justify-content: center;
-          padding-top: 65px;
-
-          .back-button {
-            @include font-line(18px, 30px);
-            font-weight: 700;
-            padding: 12px 0;
-            background-color: #ffdd52;
-            max-width: 175px;
-            border-radius: 40px;
-            width: 100%;
-            text-align: center;
+            .back-button {
+              @include font-line(18px, 30px);
+              font-weight: 700;
+              padding: 12px 0;
+              background-color: #ffdd52;
+              max-width: 175px;
+              border-radius: 40px;
+              width: 100%;
+              text-align: center;
+            }
           }
         }
       }
