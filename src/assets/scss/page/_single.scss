@@ -1,4 +1,39 @@
 .page-single {
+  padding-top: 20px;
+  .butterfly {
+    &:nth-child(1) {
+      position: absolute;
+      left: -60px;
+      top: 465px;
+      width: 386px;
+      height: 106px;
+
+      @include is-min(1600px) {
+        left: 40px;
+      }
+      @include is-max(1200px) {
+        left: -15vw;
+      }
+      @include is-max($breakpoint-pc) {
+        display: none;
+      }
+    }
+
+    &:nth-child(2) {
+      position: absolute;
+      right: -5px;
+      top: 190px;
+      width: 321px;
+
+      @include is-min(1600px) {
+        right: 40px;
+      }
+
+      @include is-max($breakpoint-pc) {
+        display: none;
+      }
+    }
+  }
   .containers {
     background-color: #fff;
     border-radius: 20px;
