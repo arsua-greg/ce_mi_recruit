@@ -65,47 +65,27 @@
         <h3 class="sect_title">働く仲間達</h3>
         <div class="swiper-container mySwiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img class="slider_img" src="<?php echo get_template_directory_uri() ?>/release/image/slider_img_1.png" alt="">
-                    <p class="slider_txt">みつばち保育園<br>保育士</p>
-                </div>
-                <div class="swiper-slide">
-                    <img class="slider_img" src="<?php echo get_template_directory_uri() ?>/release/image/slider_img_2.png" alt="">
-                    <p class="slider_txt">みつばち保育園<br>園長</p>
-                </div>
-                <div class="swiper-slide">
-                    <img class="slider_img" src="<?php echo get_template_directory_uri() ?>/release/image/slider_img_3.png" alt="">
-                    <p class="slider_txt">みつばち保育園<br>栄養士</p>
-                </div>
-                <div class="swiper-slide">
-                    <img class="slider_img" src="<?php echo get_template_directory_uri() ?>/release/image/slider_img_4.png" alt="">
-                    <p class="slider_txt">西池袋そらいろ保育園<br>園長</p>
-                </div>
-                <div class="swiper-slide">
-                    <img class="slider_img" src="<?php echo get_template_directory_uri() ?>/release/image/slider_img_5.png" alt="">
-                    <p class="slider_txt">西池袋そらいろ保育園<br>保育士</p>
-                </div>
-                <div class="swiper-slide">
-                    <img class="slider_img" src="<?php echo get_template_directory_uri() ?>/release/image/slider_img_1.png" alt="">
-                    <p class="slider_txt">みつばち保育園<br>保育士</p>
-                </div>
-                <div class="swiper-slide">
-                    <img class="slider_img" src="<?php echo get_template_directory_uri() ?>/release/image/slider_img_2.png" alt="">
-                    <p class="slider_txt">みつばち保育園<br>園長</p>
-                </div>
-                <div class="swiper-slide">
-                    <img class="slider_img" src="<?php echo get_template_directory_uri() ?>/release/image/slider_img_3.png" alt="">
-                    <p class="slider_txt">みつばち保育園<br>栄養士</p>
-                </div>
-                <div class="swiper-slide">
-                    <img class="slider_img" src="<?php echo get_template_directory_uri() ?>/release/image/slider_img_4.png" alt="">
-                    <p class="slider_txt">西池袋そらいろ保育園<br>園長</p>
-                </div>
-                <div class="swiper-slide">
-                    <img class="slider_img" src="<?php echo get_template_directory_uri() ?>/release/image/slider_img_5.png" alt="">
-                    <p class="slider_txt">西池袋そらいろ保育園<br>保育士</p>
-                </div>
+                <?php
+                $paged = (get_query_var('paged')) ? absint(get_query_var('paged')) : 1;
+                $args = array(
+                    'post_type' => 'fellow',
+                    'post_status' => 'publish',
+                    'paged' => $paged,
+                    'posts_per_page' => -1
+                );
+                $the_query = new WP_Query($args); ?>
+                <?php if ($the_query->have_posts()) : ?>
+                    <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                        <a href="<?php echo the_permalink(); ?>" class="swiper-slide">
+                            <div class="slider_img">
+                                <?php echo the_post_thumbnail(); ?>
+                            </div>
+                            <p class="slider_txt"><?php echo get_the_title(); ?></p>
+                        </a>
+                    <?php endwhile; ?>
+                <?php endif; ?>
             </div>
+
             <div class="l-wrap">
                 <div class="pagination-wrapper">
                     <div class="swiper-button-prev"></div>
