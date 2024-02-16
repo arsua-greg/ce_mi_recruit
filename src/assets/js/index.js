@@ -2,6 +2,7 @@ var swiper = new Swiper(".mySwiper", {
   slidesPerView: 2.7,
   loop: true,
   a11y: false,
+  autoplay: false,
   breakpoints: {
     1000: {
       slidesPerView: 5,

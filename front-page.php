@@ -78,7 +78,7 @@
                     <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                         <a href="<?php echo the_permalink(); ?>" class="swiper-slide">
                             <div class="slider_img">
-                                <?php echo the_post_thumbnail(); ?>
+                                <?php echo the_post_thumbnail("full"); ?>
                             </div>
                             <p class="slider_txt"><?php echo get_the_title(); ?></p>
                         </a>
