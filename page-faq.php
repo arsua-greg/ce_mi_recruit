@@ -12,7 +12,7 @@
                     <div class="drop_btn">
                         <div class="ptext">
                             <div class="circle">
-                                <img src="<?php echo get_template_directory_uri() ?>/release/image/page_faq/qq.svg" alt="">
+                                <img src="<?php echo get_template_directory_uri() ?>/release/image/page_faq/qq.png" alt="">
                             </div>
                             <p>
                                 みつばち保育園に入職するきっかけはなんでしたか？
@@ -37,7 +37,7 @@
                     <div class="drop_btn">
                         <div class="ptext">
                             <div class="circle">
-                                <img src="<?php echo get_template_directory_uri() ?>/release/image/page_faq/qq.svg" alt="">
+                                <img src="<?php echo get_template_directory_uri() ?>/release/image/page_faq/qq.png" alt="">
                             </div>
                             <p>
                                 みつばち保育園に決めたのはなぜですか？
@@ -62,7 +62,7 @@
                     <div class="drop_btn">
                         <div class="ptext">
                             <div class="circle">
-                                <img src="<?php echo get_template_directory_uri() ?>/release/image/page_faq/qq.svg" alt="">
+                                <img src="<?php echo get_template_directory_uri() ?>/release/image/page_faq/qq.png" alt="">
                             </div>
                             <p>
                                 休暇は取りやすいですか？
@@ -87,7 +87,7 @@
                     <div class="drop_btn">
                         <div class="ptext">
                             <div class="circle">
-                                <img src="<?php echo get_template_directory_uri() ?>/release/image/page_faq/qq.svg" alt="">
+                                <img src="<?php echo get_template_directory_uri() ?>/release/image/page_faq/qq.png" alt="">
                             </div>
                             <p>
                                 園や職員の雰囲気はどうですか？
@@ -113,7 +113,7 @@
                     <div class="drop_btn">
                         <div class="ptext">
                             <div class="circle">
-                                <img src="<?php echo get_template_directory_uri() ?>/release/image/page_faq/qq.svg" alt="">
+                                <img src="<?php echo get_template_directory_uri() ?>/release/image/page_faq/qq.png" alt="">
                             </div>
                             <p>
                                 労働条件、待遇はどう思いますか？

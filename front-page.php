@@ -62,7 +62,9 @@
         </div>
     </section>
     <section class="sect_4" id="friends">
-        <h3 class="sect_title">働く仲間達</h3>
+        <h3 class="sect_title">
+            <a href="<?php echo home_url(); ?>">働く仲間達</a>
+        </h3>
         <div class="swiper-container mySwiper">
             <div class="swiper-wrapper">
                 <?php
@@ -78,7 +80,7 @@
                     <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                         <a href="<?php echo the_permalink(); ?>" class="swiper-slide">
                             <div class="slider_img">
-                                <?php echo the_post_thumbnail(); ?>
+                                <?php echo the_post_thumbnail("full"); ?>
                             </div>
                             <p class="slider_txt"><?php echo get_the_title(); ?></p>
                         </a>

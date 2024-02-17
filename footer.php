@@ -6,7 +6,7 @@
                     <div class="wrapper">
                         <ul class="links">
                             <li class="links__item">
-                                <a href="">©社会福祉法人みつばち会</a>
+                                <a href="<?php echo home_url(); ?>">©社会福祉法人みつばち会</a>
                             </li>
                             <li class="links__item">
                                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfyS0vtavLtlmkZSyiQ4_UNJie7mn9zwq4VpidcW8BR-TTc_g/viewform" target="_blank">お問い合わせ</a>
