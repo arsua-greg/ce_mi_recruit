@@ -27,6 +27,15 @@ function toggleMenu() {
   navSp.classList.toggle("isOpen");
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  var navLinks = document.querySelectorAll(".nav_sp__links--item a");
+  navLinks.forEach(function (navLink) {
+    navLink.addEventListener("click", function () {
+      toggleMenu();
+    });
+  });
+});
+
 //offset on anchor tag
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
