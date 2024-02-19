@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const targetElement = document.getElementById(targetId);
 
       if (targetElement) {
-        const offset = 50; // Adjust this value based on your needs
+        const offset = 50;
         const targetPosition = targetElement.offsetTop - offset;
 
         window.scrollTo({
@@ -49,15 +49,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-$(document).ready(function() {
-  $(".drop_btn").on("click", function(event) {
+$(document).ready(function () {
+  $(".drop_btn").on("click", function (event) {
     event.preventDefault();
     var $dropDown = $(this).next(".drop_down");
     $dropDown.slideToggle();
 
     var $image = $(this).find("img");
-    $image.toggleClass("rotate"); // Just toggle the class without checking
+    $image.toggleClass("rotate");
   });
 });
-
