@@ -15,7 +15,7 @@
       &:nth-child(1) {
         position: absolute;
         left: -183px;
-        top: 330px;
+        top: 381px;
         width: 386px;
         height: 106px;
 
@@ -66,6 +66,7 @@
     .para {
       @include font-line(18px, 26px);
       font-weight: 500;
+      letter-spacing: 0.9px;
     }
     .fpara {
       padding-bottom: 35px;
@@ -163,6 +164,9 @@
         }
         tbody {
           tr {
+            .fort {
+              @include font-line(14px);
+            }
             td {
               vertical-align: middle;
               &:not(:first-child) {
@@ -194,6 +198,16 @@
             }
             .flexp {
               vertical-align: top;
+            }
+          }
+        }
+      }
+      .lasttable {
+        tr {
+          td {
+            &:last-child {
+              @include font-line(16px, 24px);
+              letter-spacing: 1.2px;
             }
           }
         }

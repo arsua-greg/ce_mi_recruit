@@ -111,7 +111,7 @@
                                 <td>7:00 - 20:30<br>
                                     (シフト制)</td>
                                 <td>208,000<br>
-                                    +5000 (そらいろ手当)</td>
+                                    +5000 <span class="fort">(そらいろ手当)</span></td>
                             </tr>
                             <tr>
                                 <td class="ftd2">
@@ -121,7 +121,7 @@
                                     栄養管理、食育活動</td>
                                 <td></td>
                                 <td>201,000<br>
-                                    +5000 (そらいろ手当)</td>
+                                    +5000 <span class="fort">(そらいろ手当)</span></td>
                             </tr>
                             <tr>
                                 <td class="ftd2">
@@ -131,7 +131,7 @@
                                     食育活動</td>
                                 <td></td>
                                 <td>195,000<br>
-                                    +5000 (そらいろ手当)</td>
+                                    +5000 <span class="fort">(そらいろ手当)</span></td>
                             </tr>
                             <tr>
                                 <td class="ftd2">
@@ -142,7 +142,7 @@
                                 <td>7:00 - 17:00<br>
                                     (基本)</td>
                                 <td>221,000 <br>
-                                    +5000 (そらいろ手当)</td>
+                                    +5000 <span class="fort">(そらいろ手当)</span></td>
                             </tr>
                         </tbody>
                     </table>
@@ -153,7 +153,7 @@
                 </div>
 
                 <div class="table-container">
-                    <table>
+                    <table class="lasttable">
                         <tbody>
                             <tr>
                                 <td>
