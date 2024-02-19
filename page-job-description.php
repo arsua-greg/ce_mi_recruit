@@ -14,9 +14,9 @@
                 </p>
 
                 <div class="tblettle-con">
-                    <div class="ttle">
-                        <h3 class="fttle">みつばち保育園 </h3>
-                        <h3 class="lttle"> 保育時間 7:15-19:15</h3>
+                    <div class="ttle flex-wrap">
+                        <h3 class="fttle">みつばち保育園</h3>
+                        <h3 class="lttle">保育時間 7:15-19:15</h3>
                     </div>
                 </div>
 
@@ -46,7 +46,7 @@
                             </tr>
                             <tr>
                                 <td class="ftd">
-                                    <p>保育士</p>
+                                    <p>栄養士</p>
                                 </td>
                                 <td>園児の給食調理と提供、<br>
                                     栄養管理、食育活動</td>
@@ -83,8 +83,8 @@
 
                 <div class="tblettle-con tblettl2">
                     <div class="ttle">
-                        <h3 class="fttle fttle2">みつばち保育園 </h3>
-                        <h3 class="lttle lttle2"> 保育時間 7:15-19:15</h3>
+                        <h3 class="fttle fttle2">西池袋そらいろ保育園</h3>
+                        <h3 class="lttle lttle2">保育時間 7:15-20:15</h3>
                     </div>
                 </div>
 
@@ -115,7 +115,7 @@
                             </tr>
                             <tr>
                                 <td class="ftd2">
-                                    <p>保育士</p>
+                                    <p>栄養士</p>
                                 </td>
                                 <td>園児の給食調理と提供、<br>
                                     栄養管理、食育活動</td>

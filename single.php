@@ -25,7 +25,7 @@
                             <?php echo the_content(); ?>
                         </div>
                         <div class="button-container">
-                            <a class="back-button" href="<?php echo home_url(); ?>">一覧にもどる</a>
+                            <a class="back-button" href="<?php echo get_permalink(get_page_by_path('news')); ?>">一覧にもどる</a>
                         </div>
                 </div>
             <?php endwhile; ?>

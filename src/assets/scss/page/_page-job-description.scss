@@ -88,14 +88,22 @@
         font-weight: 700;
         padding-top: 60px;
       }
+      .flex-wrap {
+        @include is-sp {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+      }
       .ttle {
         display: flex;
 
         .fttle {
           @include font-line(25px, 30px);
           font-weight: 700;
-          padding-right: 15px;
           color: #ff9000;
+          @include is-min($breakpoint-sp) {
+            padding-right: 15px;
+          }
         }
         .fttle2 {
           color: #0671e7;
