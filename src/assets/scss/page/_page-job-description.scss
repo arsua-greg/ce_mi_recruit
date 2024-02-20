@@ -2,6 +2,9 @@
   padding: 100px 0;
   position: relative;
   overflow: hidden;
+  @include is-sp {
+    padding: 50px 0;
+  }
 
   .sect_para {
     text-align: center;
@@ -92,11 +95,15 @@
         @include is-sp {
           flex-wrap: wrap;
           justify-content: center;
+          text-align: center;
+          flex-direction: column;
         }
       }
       .ttle {
         display: flex;
-
+        @include is-min($breakpoint-sp) {
+          align-items: flex-end;
+        }
         .fttle {
           @include font-line(25px, 30px);
           font-weight: 700;
@@ -109,9 +116,8 @@
           color: #0671e7;
         }
         .lttle {
-          @include font-line(20px, 30px);
+          @include font-line(20px);
           font-weight: 700;
-          padding-top: 3px;
           color: #ff9000;
         }
         .lttle2 {
