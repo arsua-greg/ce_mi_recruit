@@ -14,7 +14,7 @@
                     'post_type' => 'post',
                     'post_status' => 'publish',
                     'paged' => $paged,
-                    'posts_per_page' => 1
+                    'posts_per_page' => 10
                 );
 
                 $the_query = new WP_Query($args); ?>
