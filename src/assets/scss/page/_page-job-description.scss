@@ -84,25 +84,25 @@
     .tblettle-con {
       display: flex;
       justify-content: center;
-      padding-bottom: 25px;
+      @include is-min($breakpoint-sp) {
+        padding-bottom: 25px;
+      }
 
       .lhdr {
         @include font-line(25px, 30px);
         font-weight: 700;
         padding-top: 60px;
       }
-      .flex-wrap {
+      .ttle {
+        display: flex;
+        @include is-min($breakpoint-sp) {
+          align-items: flex-end;
+        }
         @include is-sp {
           flex-wrap: wrap;
           justify-content: center;
           text-align: center;
           flex-direction: column;
-        }
-      }
-      .ttle {
-        display: flex;
-        @include is-min($breakpoint-sp) {
-          align-items: flex-end;
         }
         .fttle {
           @include font-line(25px, 30px);

@@ -31,6 +31,7 @@
       a {
         border-bottom: 2px dotted #707070;
         display: block;
+        padding: 20px 0;
         &:last-child {
           border-bottom: 0;
         }
@@ -60,9 +61,6 @@
         .title {
           @include font-line(18px, 26px);
           font-weight: 500;
-          @include is-min($breakpoint-sp) {
-            width: 448px;
-          }
           @include is-sp {
             margin-top: 10px;
           }

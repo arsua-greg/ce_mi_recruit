@@ -12,9 +12,10 @@
             <p class="para lpara">子どもたちに丁寧にかかわるためには職員も生き生きと働ける場がとても重要と考えています。社会福祉法人みつばち会は労働条件を整備し働きつづけられる職場を目指しています。
             </p>
             <div class="tblettle-con">
-                <div class="ttle flex-wrap">
+                <div class="ttle">
                     <h3 class="fttle">みつばち保育園</h3>
                     <h3 class="lttle">保育時間 7:15-19:15</h3>
+                    <p class="sp text-center">スクロールしてください</p>
                 </div>
             </div>
             <div class="table-container">
@@ -80,6 +81,7 @@
                 <div class="ttle">
                     <h3 class="fttle fttle2">西池袋そらいろ保育園</h3>
                     <h3 class="lttle lttle2">保育時間 7:15-20:15</h3>
+                    <p class="sp text-center">スクロールしてください</p>
                 </div>
             </div>
             <div class="table-container">
@@ -144,6 +146,7 @@
             <div class="tblettle-con">
                 <h3 class="lhdr">共通 </h3>
             </div>
+            <p class="sp text-center">スクロールしてください</p>
             <div class="table-container">
                 <table class="lasttable">
                     <tbody>
