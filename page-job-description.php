@@ -4,7 +4,7 @@
         <img class="butterfly" src="<?php echo get_template_directory_uri() ?>/release/image/butterfly_1.svg" alt="">
         <img class="butterfly" src="<?php echo get_template_directory_uri() ?>/release/image/butterfly_2.svg" alt="">
         <h3 class="sect_title title">募集要項</h3>
-        <p class="sect_para">HOME / 募集要項</p>
+        <p class="sect_para"><a href="<?php echo home_url(); ?>">HOME</a> / 募集要項</p>
         <div class="container">
             <p class="para fpara">本園のみつばち保育園は港区という都会の中のオアシスのような自然に恵まれ、とても環境の良いところに保育園があります。0.12歳児だけの小さな保育園ですが、お庭があり毎日戸外で遊びます。少人数の特性を生かし、子ども一人ひとりの思いとしっかりと向きあい、子どもたちが自分であそびをみつけて自ら関わることを大事に保育をしています。
                 民間委託をうけ2009年4月に開園した西池袋そらいろ保育園は2019年に新園舎になり、木のぬくもりが心地よい園舎、土、水、虫など自然に触れ四季を感じることができる園庭があります。

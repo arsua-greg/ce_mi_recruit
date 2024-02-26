@@ -5,7 +5,7 @@
         <img class="butterfly" src="<?php echo get_template_directory_uri() ?>/release/image/butterfly_2.svg" alt="">
         <div class="l-wrap">
             <h3 class="sect_title title">よくある質問</h3>
-            <p class="sect_para">HOME / よくある質問</p>
+            <p class="sect_para"><a href="<?php echo home_url(); ?>">HOME</a> / よくある質問</p>
             <div class="container">
                 <!-- Q1 -->
                 <div class="accordion--container">
